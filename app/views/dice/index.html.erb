@@ -1,0 +1,31 @@
+<h1> Dice!</h1>
+
+<p> There are 2 dice!</p>
+
+
+
+<% 
+  dice_1 =rand(1..6)
+  dice_2 =rand(1..6)
+%>
+
+<p>
+<img src="/images/dice/<%= dice_1 %>.svg" alt="image of die">
+<img src="/images/dice/<%= dice_2 %>.svg" alt="image of die">
+
+
+</p>
+
+<p>
+Total:
+<%= total =dice_1+dice_2%>
+</p>
+
+<p>
+<a href="/dice"> Roll again </a>
+</p>
+
+
+
+
+
